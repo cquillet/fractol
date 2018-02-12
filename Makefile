@@ -35,15 +35,13 @@ OBJ = $(SRC:%.c=%.o)
 
 RM = rm -f
 
-.PHONY: all clean debug fclean re lib
+.PHONY: all clean debug fclean re
 
 all: $(NAME)
 
-$(NAME): lib $(OBJ)
-	$(CC) $(LDFLAGS) $(OBJ) -o $@ $(LDLIBS)
-
-lib:
+$(NAME): $(OBJ)
 	make -C $(DIRLIBS)
+	$(CC) $(LDFLAGS) $(OBJ) -o $@ $(LDLIBS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $? -o $@
