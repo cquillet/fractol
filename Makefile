@@ -23,8 +23,9 @@ DIRHEADER = . $(DIRLIBS)/includes
 CFLAGS = $(DIRHEADER:%=-I%) -Wall -Wextra -Werror
 
 LDFLAGS = $(DIRLIBS:%=-L%) -framework OpenGL -framework AppKit
-LIBNAME = libft.a libmlx.a libm.a libftprintf.a
-LDLIBS = $(LIBNAME:lib%.a=-l%)
+CUSTOMLIBS = libft.a libmlx.a libftprintf.a
+LIBS = $(CUSTOMLIBS) libm.a
+LDLIBS = $(LIBS:lib%.a=-l%)
 
 SRC = fractol.c fract_init.c fract_display.c fract_others.c \
 	  fract_mouse_move.c fract_mouse_press.c fract_mouse_release.c \
@@ -39,9 +40,11 @@ RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	make -C $(DIRLIBS)
+$(NAME): $(CUSTOMLIBS) $(OBJ)
 	$(CC) $(LDFLAGS) $(OBJ) -o $@ $(LDLIBS)
+
+%.a:
+	make -C $(DIRLIBS) $@
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $? -o $@
