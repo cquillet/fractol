@@ -12,9 +12,6 @@
 
 NAME = fractol
 
-DIRSRC = .
-DIROBJ = .
-
 CC = gcc
 
 DIRLIBS = ../libs
@@ -23,7 +20,7 @@ DIRHEADER = . $(DIRLIBS)/includes
 CFLAGS = $(DIRHEADER:%=-I%) -Wall -Wextra -Werror
 
 LDFLAGS = $(DIRLIBS:%=-L%) -framework OpenGL -framework AppKit
-CUSTOMLIBS = libft.a libmlx.a libftprintf.a
+CUSTOMLIBS = libft.a libftprintf.a libmlx.a
 LIBS = $(CUSTOMLIBS) libm.a
 LDLIBS = $(LIBS:lib%.a=-l%)
 
