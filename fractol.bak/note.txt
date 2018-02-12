@@ -1,0 +1,13 @@
+Pour pouvoir compiler un projet (tous systèmes) avec pthread, il faut pour commencer, ajouter l'en-tête :
+
+#include <pthread.h>
+
+ainsi qu'ajouter à l'éditeur de lien la bibliothèque :
+
+  -lpthread
+
+et spécifier au compilateur la constante :
+
+   -D_REENTRANT
+
+Vous voilà prêt pour compiler des programmes utilisant la bibliothèque Pthreads !

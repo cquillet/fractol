@@ -1,0 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   debug.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cquillet <cquillet@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/10 16:28:44 by cquillet          #+#    #+#             */
+/*   Updated: 2017/10/25 17:03:16 by cquillet         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef DEBUG_H
+# define DEBUG_H
+
+# include <stdio.h>
+# include "complex.h"
+# include "fractol.h"
+
+//void			cplx_print(t_cplx z);
+
+#endif
