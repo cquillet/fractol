@@ -18,4 +18,5 @@ Press *H* to show a little help
 
 #### Example :
 `fractol julia`
+
 ![julia with zoombox](http://quillet.com/images/fractol.png)
