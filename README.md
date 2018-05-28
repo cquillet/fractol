@@ -4,7 +4,7 @@
 
 This is a program to draw fractals
 
-*usage:* fractol (mandel[brot] | julia | burning | newton)
+*usage:* `fractol (mandel[brot] | julia | burning | newton)`
 
 Available fractals are :
 * Madelbrot
@@ -15,3 +15,7 @@ Available fractals are :
 You can draw a box (*click and drag*) in order to zoom in (*left click*) or out (*right click*) 
 
 Press *H* to show a little help
+
+#### Example :
+`fractol julia`
+![julia with zoombox](http://quillet.com/images/fractol.png)
