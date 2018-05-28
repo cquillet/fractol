@@ -16,7 +16,8 @@ You can draw a box (*click and drag*) in order to zoom in (*left click*) or out 
 
 Press *H* to show a little help
 
-#### Example :
+
+#### Example of the zoombox in Julia set:
 `fractol julia`
 
 ![julia with zoombox](http://quillet.com/images/fractol.png)
