@@ -14,7 +14,7 @@ Available fractals/sets are :
 
 You can draw a box (*click and drag*) in order to zoom in (*left click*) or out (*right click*) 
 
-Press `H` to show a little help
+During the execution, press `H` to show a little help
 
 
 #### Example of the zoombox in Julia set:
