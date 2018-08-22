@@ -20,4 +20,4 @@ During the execution, press `H` to show a little help
 #### Example of the zoombox in Julia set:
 >`fractol julia`
 >
->![julia with zoombox](http://quillet.com/images/fractol.png)
+>![julia with zoombox](https://raw.githubusercontent.com/cquillet/stuff/master/img/fractol.png)
